@@ -18,7 +18,7 @@ server.get('/users/:id', (req, res) => {
         res.json(user)
     } else {
         res.status(404).json({
-            'message: user not found'
+            message: 'user not found'
         })
     }
 })
