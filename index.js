@@ -28,7 +28,9 @@ server.post('/users', (req, res) => {
     })
     res.status(201).json
 })
-server.patch('/users/:id', )
+server.patch('/users/:id', (req, res) => {
+    
+})
 server.delete('/users/:id', (req, res) => {
     const removeUser = db.deleteUser(id)
 })
